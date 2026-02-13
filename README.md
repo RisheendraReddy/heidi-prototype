@@ -68,7 +68,7 @@ python3 -m pytest tests/ -v
 | B | No | 0% | 0 | Isolated |
 | C | Yes | 30% | 1 | Basic |
 
-**4 Patients:**
+**2 Patients:**
 
 | Patient | Clinics | Used for |
 |---------|---------|----------|
