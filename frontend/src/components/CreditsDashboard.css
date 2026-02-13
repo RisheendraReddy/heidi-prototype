@@ -1,0 +1,119 @@
+.credits-dashboard {
+  padding: 1rem;
+  background-color: var(--bg);
+  border-radius: 0.75rem;
+  border: 1px solid var(--border-light);
+}
+
+.credits-dashboard.compact {
+  padding: 0.75rem;
+}
+
+.credits-dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.credits-dashboard-header h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--primary);
+}
+
+.credits-dashboard .close-btn {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: var(--muted-text);
+  line-height: 1;
+}
+
+.credits-dashboard h4 {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted-text);
+  font-weight: 600;
+}
+
+.credits-explainer {
+  font-size: 0.8125rem;
+  color: var(--muted-text);
+  line-height: 1.5;
+  margin: 0 0 0.75rem 0;
+}
+
+.credits-totals {
+  margin-bottom: 1.25rem;
+}
+
+.credits-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.credit-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem 1rem;
+  background-color: var(--surface);
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-light);
+  min-width: 100px;
+}
+
+.credit-card .clinic-name {
+  font-size: 0.875rem;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.credit-card .credit-count {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.no-credits, .no-events {
+  font-size: 0.875rem;
+  color: var(--muted-text);
+  margin: 0;
+}
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.event-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  background-color: var(--surface);
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-light);
+  font-size: 0.8125rem;
+}
+
+.event-patient {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.event-flow {
+  color: var(--muted-text);
+}
+
+.event-time {
+  font-size: 0.75rem;
+  color: var(--muted-text);
+  margin-left: auto;
+}

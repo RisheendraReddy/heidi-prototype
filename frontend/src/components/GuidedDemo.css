@@ -1,0 +1,134 @@
+.guided-demo-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 3000;
+  padding-bottom: 2rem;
+}
+
+.guided-demo-panel {
+  background: var(--surface);
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  max-width: 600px;
+  width: 92%;
+  border: 2px solid var(--primary);
+  box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.18);
+}
+
+.guided-demo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.guided-demo-header h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--primary);
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.guided-demo-step-indicator {
+  font-size: 0.75rem;
+  color: var(--muted-text);
+  font-weight: 600;
+}
+
+.guided-demo-close {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: var(--muted-text);
+  line-height: 1;
+}
+
+.guided-demo-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin: 0 0 0.5rem 0;
+}
+
+.guided-demo-narration {
+  font-size: 0.875rem;
+  color: var(--muted-text);
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+}
+
+.guided-demo-actions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.guided-demo-run {
+  padding: 0.5rem 1.25rem;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: background-color 0.2s;
+}
+
+.guided-demo-run:hover:not(:disabled) {
+  background-color: var(--primary-hover);
+}
+
+.guided-demo-run:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.guided-demo-next {
+  padding: 0.5rem 1.25rem;
+  background-color: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: 9999px;
+  cursor: pointer;
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: background-color 0.2s;
+}
+
+.guided-demo-next:hover {
+  background-color: var(--bg);
+}
+
+.guided-demo-done {
+  font-size: 0.8125rem;
+  color: var(--success);
+  font-weight: 500;
+}
+
+.guided-demo-progress {
+  display: flex;
+  gap: 0.375rem;
+  margin-top: 1rem;
+}
+
+.progress-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border-light);
+  transition: background 0.2s;
+}
+
+.progress-dot.active {
+  background: var(--primary);
+}
+
+.progress-dot.completed {
+  background: var(--success);
+}

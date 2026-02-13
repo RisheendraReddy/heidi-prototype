@@ -1,0 +1,39 @@
+.participation-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.participation-badge--small {
+  padding: 0.125rem 0.375rem;
+  font-size: 0.6875rem;
+}
+
+.participation-badge--medium {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+}
+
+.participation-badge.status-0 {
+  background-color: var(--muted-text);
+  color: white;
+}
+
+.participation-badge.status-1 {
+  background-color: #5B7C99;
+  color: white;
+}
+
+.participation-badge.status-2 {
+  background-color: #7B5C8E;
+  color: white;
+}
+
+.participation-badge.status-3 {
+  background-color: var(--primary);
+  color: white;
+}

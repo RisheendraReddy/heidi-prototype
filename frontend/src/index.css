@@ -1,0 +1,56 @@
+/* Heidi UI Design System */
+:root {
+  --bg: #FCFAF9;
+  --primary: #4A2631;
+  --primary-hover: #5A3B44;
+  --muted-text: #857278;
+  --border: #C9BEC1;
+  --border-light: rgba(201, 190, 193, 0.6);
+  --surface: #FFFFFF;
+  --error: #9B2C2C;
+  --error-bg: #FEF2F2;
+  --success: #2D6A4F;
+  --success-bg: #ECFDF5;
+  --warning: #92400E;
+  --warning-bg: #FFFBEB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg);
+  color: var(--primary);
+  line-height: 1.6;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted-text);
+}

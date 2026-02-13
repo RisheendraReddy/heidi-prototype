@@ -1,0 +1,129 @@
+.walkthrough-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(74, 38, 49, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 2rem;
+  overflow-y: auto;
+  backdrop-filter: blur(4px);
+}
+
+.walkthrough-modal {
+  background-color: var(--surface);
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 700px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(74, 38, 49, 0.15);
+  border: 1px solid var(--border-light);
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--bg);
+  border: 1px solid var(--border-light);
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: var(--muted-text);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  transition: all 0.2s;
+}
+
+.close-button:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+.walkthrough-modal h2 {
+  margin: 0 0 1.5rem 0;
+  color: var(--primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-right: 3rem;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.walkthrough-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.walkthrough-content section {
+  padding: 1.25rem;
+  background-color: var(--bg);
+  border-radius: 0.75rem;
+  border: 1px solid var(--border-light);
+  border-left: 3px solid var(--primary);
+}
+
+.walkthrough-content h3 {
+  margin: 0 0 0.75rem 0;
+  color: var(--primary);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.walkthrough-content p {
+  color: var(--muted-text);
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+  font-size: 0.9375rem;
+}
+
+.walkthrough-content ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  line-height: 1.8;
+}
+
+.walkthrough-content li {
+  margin: 0.375rem 0;
+  color: var(--primary);
+  font-size: 0.9375rem;
+}
+
+.walkthrough-content strong {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.walkthrough-footer {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.walkthrough-footer button {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  transition: background-color 0.2s, transform 0.15s;
+}
+
+.walkthrough-footer button:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+}
