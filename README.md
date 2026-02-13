@@ -68,12 +68,14 @@ python3 -m pytest tests/ -v
 | B | No | 0% | 0 | Isolated |
 | C | Yes | 30% | 1 | Basic |
 
-**2 Patients:**
+**4 Patients:**
 
 | Patient | Clinics | Used for |
 |---------|---------|----------|
 | John Doe (DOB: 1990-01-15, Phone: 1234) | A, C | Cross-clinic demo (preset in UI) |
 | Jane Smith (DOB: 1985-03-22, Phone: 5678) | A | Single-clinic demo (preset in UI) |
+| Alex Rivera (DOB: 1978-11-03, Phone: 9012) | B, C | Benchmarking distribution variety |
+| Maria Chen (DOB: 2000-07-20, Phone: 3456) | A | Benchmarking distribution variety |
 
 ## API Endpoints
 
